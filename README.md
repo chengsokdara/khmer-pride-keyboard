@@ -1,4 +1,4 @@
-# Khmerlish Keyboard public pages
+# Khmer Pride Keyboard public pages
 
 Public support and privacy pages for `ក្តារចុចមោទនភាពខ្មែរ`.
 
