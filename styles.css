@@ -1,14 +1,15 @@
 :root {
   color-scheme: light;
-  --background: #f6f7f2;
+  --background: #fff9f1;
   --surface: #ffffff;
-  --surface-muted: #eef1e8;
-  --text: #162019;
-  --muted: #536057;
-  --brand: #17663b;
-  --brand-dark: #0c4929;
-  --border: #d8ded5;
-  --focus: #e0a72f;
+  --surface-muted: #f6eddf;
+  --text: #241b16;
+  --muted: #6d6259;
+  --brand: #243f91;
+  --brand-dark: #172c70;
+  --accent: #df7600;
+  --border: #e8ddcf;
+  --focus: #df7600;
   font-family: Inter, "Noto Sans Khmer", "Khmer OS Battambang", system-ui, sans-serif;
 }
 
@@ -24,9 +25,7 @@ html {
 body {
   margin: 0;
   color: var(--text);
-  background:
-    radial-gradient(circle at 12% 4%, rgba(23, 102, 59, 0.1), transparent 27rem),
-    var(--background);
+  background: var(--background);
   line-height: 1.65;
 }
 
@@ -92,10 +91,11 @@ a:focus-visible {
 
 .hero {
   display: grid;
-  grid-template-columns: minmax(0, 1.25fr) minmax(17rem, 0.75fr);
-  gap: clamp(2rem, 6vw, 5rem);
+  grid-template-columns: minmax(0, 1fr) minmax(20rem, 0.72fr);
+  gap: clamp(2rem, 7vw, 6rem);
   align-items: center;
-  padding-block: clamp(4rem, 10vw, 8rem);
+  min-height: calc(100vh - 9rem);
+  padding-block: clamp(3rem, 7vw, 6rem);
 }
 
 .eyebrow {
@@ -114,7 +114,7 @@ h2 {
 }
 
 h1 {
-  max-width: 13ch;
+  max-width: 11ch;
   margin: 0;
   font-size: clamp(2.5rem, 7vw, 5.7rem);
 }
@@ -167,35 +167,34 @@ h2 {
   background: var(--surface-muted);
 }
 
-.example-card {
-  padding: 1.4rem;
-  border: 1px solid var(--border);
-  border-radius: 1rem;
-  background: var(--surface);
-  box-shadow: 0 1.25rem 3rem rgba(22, 32, 25, 0.08);
+.hero-visual {
+  position: relative;
+  margin: 0;
+  padding: 1.4rem 1.4rem 1rem;
+  border-radius: 2.5rem;
+  background: var(--brand);
+  box-shadow: 0 2rem 5rem rgba(36, 63, 145, 0.2);
 }
 
-.mapping {
-  display: grid;
-  grid-template-columns: 1fr auto 1fr;
-  gap: 0.8rem;
-  align-items: center;
-  padding: 0.85rem 0;
-  border-bottom: 1px solid var(--border);
+.phone-frame {
+  overflow: hidden;
+  border: 0.45rem solid #172c70;
+  border-radius: 2rem;
+  background: #fff;
 }
 
-.mapping:last-child {
-  border-bottom: 0;
+.phone-frame img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
-.mapping span:first-child {
-  color: var(--muted);
-  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
-}
-
-.mapping strong {
-  font-size: 1.15rem;
-  text-align: right;
+.hero-visual figcaption {
+  padding: 0.85rem 0.3rem 0.1rem;
+  color: white;
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-align: center;
 }
 
 .content-card {
@@ -243,6 +242,7 @@ h2 {
 
   .hero {
     padding-block: 3rem 5rem;
+    min-height: auto;
   }
 
   h1 {
