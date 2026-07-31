@@ -124,6 +124,30 @@ h2 {
   font-size: clamp(1.45rem, 3vw, 2rem);
 }
 
+.content-card h1 {
+  max-width: none;
+  font-size: clamp(1.75rem, 4vw, 2.4rem);
+}
+
+.content-card table {
+  width: 100%;
+  margin: 1rem 0 0;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.content-card th,
+.content-card td {
+  padding: 0.65rem 0.75rem;
+  border: 1px solid var(--border);
+  text-align: left;
+  vertical-align: top;
+}
+
+.content-card th {
+  background: var(--surface-muted);
+}
+
 .lead {
   max-width: 40rem;
   margin: 1.5rem 0 0;
