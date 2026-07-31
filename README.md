@@ -3,47 +3,38 @@
 Public support, privacy, and terms pages for `ក្តារចុចមោទនភាពខ្មែរ`
 (Khmer Pride Keyboard).
 
-## Live URLs
+## Canonical public URLs
 
-GitHub Pages may redirect to the custom host. Prefer the custom domain in store
-and OAuth forms when both work:
+**Use GitHub Pages only.** Do not use `cheng.sokdara.com` for Play Store, Google
+OAuth, or in-app links (that custom domain may expire).
 
 | Page | URL |
 |------|-----|
-| Home | https://cheng.sokdara.com/khmer-pride-keyboard/ |
-| Privacy | https://cheng.sokdara.com/khmer-pride-keyboard/privacy-policy/ |
-| Terms | https://cheng.sokdara.com/khmer-pride-keyboard/terms-of-service/ |
+| Home | https://chengsokdara.github.io/khmer-pride-keyboard/ |
+| Privacy | https://chengsokdara.github.io/khmer-pride-keyboard/privacy-policy/ |
+| Terms | https://chengsokdara.github.io/khmer-pride-keyboard/terms-of-service/ |
 | Support | chengsokdara@gmail.com |
 
-GitHub Pages fallback host:
-
-- https://chengsokdara.github.io/khmer-pride-keyboard/
+If github.io redirects to a custom domain, remove the custom domain under  
+**GitHub → Settings → Pages → Custom domain** so github.io stays stable.
 
 ## Source of truth in the app monorepo
 
-Markdown drafts used when editing legal copy:
+Markdown drafts:
 
 - `khmerlish-keyboard/apps/android/play-store/legal/privacy-policy.md`
 - `khmerlish-keyboard/apps/android/play-store/legal/terms-of-service.md`
 
-After changing those drafts, update the HTML in this repo and push to `main`
-so GitHub Pages rebuilds.
+After changing those drafts, update the HTML here and push to `main`.
 
 ## Google OAuth branding verification
 
-If Google asks you to verify domain ownership for the app logo / homepage:
-
-1. Use authorized domain **`cheng.sokdara.com`** (custom host) or
-   **`chengsokdara.github.io`** (GitHub host).
-2. Verify that domain in [Google Search Console](https://search.google.com/search-console)
-   with the same Google account that owns the Cloud OAuth project
-   (`chengsokdara@gmail.com`).
-3. HTML meta tag method: paste the tag Google gives you into `index.html`
-   `<head>`, push to `main`, wait for Pages deploy, then click Verify.
-4. DNS method (stronger): add the TXT record Google shows on the domain DNS
-   for `sokdara.com` / `cheng.sokdara.com` if you control DNS.
-
-Full checklist: monorepo `docs/GOOGLE_CLOUD_OAUTH_SETUP.md`.
+1. Put homepage / privacy / terms as the **github.io** URLs above.
+2. Authorized domain: `github.io`.
+3. Verify ownership in [Google Search Console](https://search.google.com/search-console)
+   as `chengsokdara@gmail.com` (HTML meta tag in this repo’s `index.html` is the
+   usual path for GitHub Pages).
+4. Full checklist: monorepo `docs/GOOGLE_CLOUD_OAUTH_SETUP.md`.
 
 This repository contains only public support material. No internal product
 code names in user-facing copy.
