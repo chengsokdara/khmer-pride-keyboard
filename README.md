@@ -18,6 +18,16 @@ Use **GitHub Pages only** for Play Store and OAuth:
 
 Do not use `cheng.sokdara.com` for store or OAuth links (custom domain may expire).
 
+## app-ads.txt
+
+Authorized sellers must be published at the **domain root**, not this project
+path:
+
+https://chengsokdara.github.io/app-ads.txt
+
+That file lives in `chengsokdara/chengsokdara.github.io`. A review copy is
+`apps/android/play-store/legal/app-ads.txt` in the app monorepo.
+
 ## Play Data Safety
 
 - Account creation method: **OAuth** (Google Sign-In for optional cloud backup).

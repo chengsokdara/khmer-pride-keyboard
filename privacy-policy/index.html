@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Privacy Policy for Khmer Pride Keyboard on Android, including optional Google Drive backup.">
+    <meta name="description" content="Privacy Policy for Khmer Pride Keyboard on Android, including host-app ads, Firebase Analytics, and optional Google Drive backup.">
     <meta name="theme-color" content="#243f91">
     <title>Privacy Policy | Khmer Pride Keyboard</title>
     <link rel="stylesheet" href="../styles.css">
@@ -25,7 +25,7 @@
       <article class="content-card">
         <p class="eyebrow">Khmer Pride Keyboard | Android</p>
         <h1>Privacy Policy</h1>
-        <p class="meta">Effective date: July 31, 2026</p>
+        <p class="meta">Effective date: August 20, 2026</p>
 
         <p>
           <strong>ក្តារចុចមោទនភាពខ្មែរ</strong> (“Khmer Pride Keyboard”) is an
@@ -33,29 +33,100 @@
           Khmer text on your device.
         </p>
         <p>The app is developed and published by Cheng Sokdara.</p>
-
-        <h2>Data collection</h2>
-        <p>
-          The app does not sell typed content, contacts, photos, location,
-          advertising data, or personal dictionary entries.
-        </p>
-        <p>
-          The keyboard word dictionary is bundled with the app, and suggestions
-          are generated locally on your device.
-        </p>
-        <p>Optional network features:</p>
+        <p>This policy covers:</p>
         <ul>
+          <li>The free keyboard app <code>com.chengsokdara.keyboard</code></li>
           <li>
-            <strong>Google Play Billing</strong> if you unlock Pro: purchase and
-            restore are handled by Google Play.
-          </li>
-          <li>
-            <strong>Google Sign-In and Google Drive App Data</strong> (Pro only,
-            if you turn on cloud backup): see Personal Dictionary below.
+            The optional paid companion
+            <code>com.chengsokdara.keyboard.pro</code>
+            (“Khmer Pride Keyboard Pro”)
           </li>
         </ul>
         <p>
-          The current build does not collect analytics events or crash reports.
+          It applies to versions of the free keyboard that include host-app ads
+          and Firebase Analytics (the Play release after <code>0.6.0</code> /
+          version code 10). Builds <code>0.5.0</code> and <code>0.6.0</code>
+          do not include those SDKs.
+        </p>
+
+        <h2>What we never collect</h2>
+        <p>
+          The keyboard does <strong>not</strong> send what you type, password
+          fields, messages, suggestions you see, or My Dictionary words to us
+          or to ad networks.
+        </p>
+        <p>
+          Suggestions run on your device from a bundled word list. The IME
+          (the keyboard itself) does not make analytics or ad requests while
+          you type.
+        </p>
+
+        <h2>Data the free keyboard may collect (host app)</h2>
+        <p>
+          When you open the <strong>host app</strong> (Setup, Learn, Practice,
+          My Dictionary, Settings, Tutorial), the free keyboard may use the
+          network for:
+        </p>
+
+        <h3>Analytics (Firebase Analytics, Google)</h3>
+        <p>
+          We use Firebase Analytics to see whether people open the app, finish
+          setup, use the tutorial, and whether the keyboard was used that day.
+        </p>
+        <p>Typical data:</p>
+        <ul>
+          <li>App opens and which host screen you opened</li>
+          <li>Tutorial step, skip, and finish</li>
+          <li>Whether the keyboard is enabled and selected</li>
+          <li>Whether Pro is installed</li>
+          <li>
+            A once-per-day “keyboard used today” signal (timestamp and layout
+            name such as Khmerlish / Khmer / English — not the text you typed)
+          </li>
+          <li>App instance identifiers used by Firebase</li>
+        </ul>
+
+        <h3>Advertising (Unity LevelPlay)</h3>
+        <p>
+          The free host app may show ads on Setup, Tutorial (steps 3–5), and
+          My Dictionary. Ads are <strong>not</strong> shown on the keyboard
+          while you type.
+        </p>
+        <p>
+          We use Unity LevelPlay as the mediator. Current bidding networks:
+        </p>
+        <ul>
+          <li>Meta Audience Network (Meta Platforms)</li>
+          <li>Liftoff Monetize (formerly Vungle)</li>
+        </ul>
+        <p>
+          <strong>Mintegral</strong> may be added later after their account
+          review. This policy and the Play Data Safety form will list
+          Mintegral only when that network is actually in the app.
+        </p>
+        <p>Ad networks may receive:</p>
+        <ul>
+          <li>Your device’s Advertising ID</li>
+          <li>Device and app signals needed to request and measure ads</li>
+          <li>Ad impressions and approximate revenue events</li>
+        </ul>
+        <p>
+          They do <strong>not</strong> receive the text you type or My
+          Dictionary entries.
+        </p>
+        <p>
+          Installing <strong>Khmer Pride Keyboard Pro</strong> removes these
+          host-app ads. Pro users are not shown LevelPlay ads.
+        </p>
+        <p>
+          In the European Economic Area and the United Kingdom we use Google’s
+          UMP consent form before personalized ads.
+        </p>
+
+        <h3>Permissions</h3>
+        <p>
+          The free app may request network access and the Advertising ID. It
+          does not request location for ads.
         </p>
 
         <h2>Personal Dictionary</h2>
@@ -75,8 +146,9 @@
 
         <h3>Optional Pro cloud backup (Google Drive)</h3>
         <p>
-          If you unlock <strong>Khmer Pride Keyboard Pro</strong> and choose
-          <strong>Connect Google Drive</strong>, the app may:
+          Cloud backup runs in the <strong>Pro companion app</strong>, not in
+          the keyboard process. If you install Pro and choose
+          <strong>Connect Google Drive</strong>, that companion app may:
         </p>
         <ol>
           <li>
@@ -89,22 +161,26 @@
           </li>
         </ol>
         <p>
-          We do <strong>not</strong> host your My Dictionary on our own servers
-          for this feature. The backup lives in your Google account. You can
-          disconnect in the app, delete the cloud backup from the app, or revoke
-          app access in your Google Account settings. Local words on the device
-          are kept when you disconnect unless you delete them yourself.
+          We do <strong>not</strong> host your My Dictionary on our own servers.
+          The backup lives in your Google account. You can disconnect in the
+          app, delete the cloud backup from the app, or revoke app access in
+          your Google Account settings. Local words on the device are kept when
+          you disconnect unless you delete them yourself.
         </p>
         <p>
-          Typing you do in other apps (messages, passwords, and so on) is not
-          uploaded as part of cloud backup.
+          Typing you do in other apps is not uploaded as part of cloud backup.
         </p>
 
-        <h2>Accounts</h2>
+        <h2>Accounts and purchases</h2>
         <p>
-          Google Sign-In is optional and used for Drive App Data cloud backup
-          (Pro). Sign-in does not unlock Pro. Pro is sold only through Google
-          Play Billing. Bank transfer tips never unlock features or cloud sync.
+          The free keyboard does not create a developer username or password.
+        </p>
+        <p>
+          Google Sign-In is optional and used only for Drive App Data cloud
+          backup in the Pro companion. Sign-in does not unlock Pro. Pro is a
+          separate paid Play Store app
+          (<code>com.chengsokdara.keyboard.pro</code>). Installing it unlocks
+          Pro. ABA bank tips never unlock features or cloud sync.
         </p>
 
         <h2>Secure fields</h2>
@@ -113,30 +189,51 @@
           hides Khmer suggestions, and does not learn entries.
         </p>
 
-        <h2>Data retention and deletion</h2>
+        <h2>Sharing</h2>
+        <p>We do not sell your data.</p>
         <p>
-          Local Personal Dictionary entries and preferences remain on your
-          device until you delete them in the app, clear the app’s storage, or
-          uninstall the app.
+          We share the analytics and advertising data described above with:
+        </p>
+        <ul>
+          <li>Google (Firebase Analytics)</li>
+          <li>Unity (LevelPlay)</li>
+          <li>Meta Platforms (Audience Network)</li>
+          <li>Liftoff (Monetize)</li>
+        </ul>
+        <p>
+          Those companies process the data under their own policies to provide
+          analytics or ads. Pro Drive backup is stored in <strong>your</strong>
+          Google account, not shared with ad networks.
+        </p>
+
+        <h2>Retention and deletion</h2>
+        <p>
+          Local dictionary and preferences stay on the device until you delete
+          them, clear app storage, or uninstall.
         </p>
         <p>
-          If you used cloud backup, you can delete the cloud copy from the app
-          (Delete cloud backup) or manage app access in your Google Account.
-          After that, the developer has no separate server copy of your
-          dictionary.
+          Cloud dictionary backup is deleted when you use Delete cloud backup
+          or remove app access in Google Account settings. See
+          <a href="../delete-data/">delete data</a> and
+          <a href="../delete-account/">delete account</a>.
+        </p>
+        <p>
+          Analytics events are not stored as a named account we can look up.
+          Uninstalling the app stops new events from this install. You can
+          reset or opt out of the Advertising ID in Android Settings.
         </p>
 
         <h2>Children</h2>
         <p>
-          The app is not directed to children. It does not knowingly collect
-          personal data from children.
+          The app is not directed to children under 13. It does not knowingly
+          collect personal data from children.
         </p>
 
         <h2>Changes</h2>
         <p>
-          If the app later adds analytics, crash reporting, a developer-hosted
-          sync server, or other network features, this policy and the Google
-          Play Data Safety declaration will be updated before release.
+          If we add a new ad network (including Mintegral), crash reporting, or
+          another network destination, this policy and the Google Play Data
+          Safety form will be updated before that release.
         </p>
 
         <h2>Contact</h2>
@@ -150,8 +247,9 @@
         </p>
 
         <p class="note">
-          Suggestions run on-device. Optional Pro cloud backup stores only your
-          My Dictionary in your Google Drive App Data when you turn it on.
+          Suggestions run on-device. Host-app ads and analytics never include
+          what you type. Optional Pro cloud backup stores only your My
+          Dictionary in your Google Drive App Data when you turn it on.
         </p>
       </article>
     </main>
