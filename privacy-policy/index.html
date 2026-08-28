@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Privacy Policy for Khmer Pride Keyboard on Android, including host-app ads, Firebase Analytics, and optional Google Drive backup.">
+    <meta name="description" content="Privacy Policy for Khmer Pride Keyboard on Android, including Unity LevelPlay ads, Firebase Analytics, a 7-day Pro trial, and optional Google Drive backup.">
     <meta name="theme-color" content="#243f91">
     <title>Privacy Policy | Khmer Pride Keyboard</title>
     <link rel="stylesheet" href="../styles.css">
@@ -25,7 +25,7 @@
       <article class="content-card">
         <p class="eyebrow">Khmer Pride Keyboard | Android</p>
         <h1>Privacy Policy</h1>
-        <p class="meta">Effective date: August 23, 2026</p>
+        <p class="meta">Effective date: August 28, 2026</p>
 
         <p>
           <strong>ក្តារចុចមោទនភាពខ្មែរ</strong> (“Khmer Pride Keyboard”) is an
@@ -81,28 +81,28 @@
           <li>Whether Pro is installed</li>
           <li>
             A once-per-day “keyboard used today” signal (timestamp and layout
-            name such as Khmerlish / Khmer / English — not the text you typed)
+            name such as Latin-to-Khmer / Khmer / English — not the text you typed)
           </li>
           <li>App instance identifiers used by Firebase</li>
         </ul>
 
-        <h3>Advertising (TopOn)</h3>
+        <h3>Advertising (Unity LevelPlay)</h3>
         <p>
           The free host app may show ads on Setup, Tutorial replay (steps 3–5),
           and My Dictionary. Ads are <strong>not</strong> shown on the first-run
           tutorial or on the keyboard while you type.
         </p>
         <p>
-          We use TopOn (AnyThink) as the mediator, including TopOn ADX and
-          fallback (“bottom”) ads. Current bidding networks:
+          We use Unity LevelPlay as the mediator. Current bidding networks:
         </p>
         <ul>
           <li>Meta Audience Network (Meta Platforms)</li>
           <li>Liftoff Monetize (formerly Vungle)</li>
+          <li>ironSource Ads</li>
         </ul>
         <p>
           <strong>Mintegral</strong> may be added later after their account
-          review. This policy and the Play Data Safety form will list
+          review. This policy and the Google Play Data Safety form will list
           Mintegral only when that network is actually in the app.
         </p>
         <p>Ad networks may receive:</p>
@@ -124,6 +124,32 @@
           UMP consent form before personalized ads.
         </p>
 
+        <h3>7-day Pro trial (host app)</h3>
+        <p>
+          When you start or continue the 7-day Pro trial, the host app may
+          contact
+          <code>https://khmerlish-keyboard-community.vercel.app/</code>
+          over HTTPS with:
+        </p>
+        <ul>
+          <li>
+            A Play Integrity token (so we can confirm the request comes from
+            this app on this device)
+          </li>
+          <li>
+            A hashed Android device id (SHA-256 of ANDROID_ID). This is a
+            <strong>device identifier</strong>, not an account. We do not
+            receive or store your Google account, email, or name for the trial.
+          </li>
+        </ul>
+        <p>
+          This check exists so uninstall on the same Android profile cannot
+          mint a new 7-day trial. Factory reset, another user profile, a
+          sideloaded build, and a new phone can still start a new trial. We do
+          <strong>not</strong> create a user account. The IME does not send
+          this request while you type.
+        </p>
+
         <h3>Permissions</h3>
         <p>
           The free app may request network access and the Advertising ID. It
@@ -141,8 +167,10 @@
         <h3>Local only (default)</h3>
         <p>
           By default, personal dictionary data is not uploaded to the developer.
-          Android cloud backup for the app remains disabled so the system does
-          not back up My Dictionary automatically.
+          Android Auto Backup is limited to a small Pro-trial clock file (trial
+          timestamps and a hashed device id) so uninstalling does not reset a
+          used 7-day trial when Google backup is enabled. My Dictionary, typing
+          preferences, and other app data are excluded from Android backup.
         </p>
 
         <h3>Optional Pro cloud backup (Google Drive)</h3>
@@ -175,6 +203,7 @@
         <h2>Accounts and purchases</h2>
         <p>
           The free keyboard does not create a developer username or password.
+          The 7-day Pro trial does not register an account.
         </p>
         <p>
           Google Sign-In is optional and used only for Drive App Data cloud
@@ -197,7 +226,7 @@
         </p>
         <ul>
           <li>Google (Firebase Analytics)</li>
-          <li>TopOn (AnyThink) and TopOn ADX</li>
+          <li>Unity LevelPlay, including ironSource Ads</li>
           <li>Meta Platforms (Audience Network)</li>
           <li>Liftoff (Monetize)</li>
         </ul>
@@ -249,8 +278,9 @@
 
         <p class="note">
           Suggestions run on-device. Host-app ads and analytics never include
-          what you type. Optional Pro cloud backup stores only your My
-          Dictionary in your Google Drive App Data when you turn it on.
+          what you type. The 7-day trial uses a hashed device id, not an
+          account. Optional Pro cloud backup stores only your My Dictionary in
+          your Google Drive App Data when you turn it on.
         </p>
       </article>
     </main>
