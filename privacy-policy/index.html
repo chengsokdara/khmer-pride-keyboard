@@ -26,321 +26,102 @@
         <p class="eyebrow">Khmer Pride Keyboard | Android</p>
         <h1>Privacy Policy</h1>
         <p class="meta">Effective date: September 15, 2026</p>
-
-        <p>
-          <strong>ក្តារចុចមោទនភាពខ្មែរ</strong> (“Khmer Pride Keyboard”) is an
-          Android keyboard that converts familiar Latin-letter typing into
-          Khmer text on your device.
-        </p>
-        <p>The app is developed and published by Cheng Sokdara.</p>
-        <p>This policy covers:</p>
-        <ul>
-          <li>
-            The free keyboard app
-            <code>com.chengsokdara.keyboard</code>
-          </li>
-          <li>
-            The optional paid companion
-            <code>com.chengsokdara.keyboard.pro</code> (“Khmer Pride Keyboard
-            Pro”)
-          </li>
-        </ul>
-        <p>
-          It applies to versions of the free keyboard that include host-app ads
-          and Firebase Analytics (the Play release after <code>0.6.0</code> /
-          version code 10). Builds <code>0.5.0</code> and <code>0.6.0</code> do
-          not include those SDKs.
-        </p>
-
-        <h2>What we never collect</h2>
-        <p>
-          The keyboard does <strong>not</strong> send what you type, password
-          fields, messages, suggestions you see, or My Dictionary words to us
-          or to ad networks.
-        </p>
-        <p>
-          Suggestions run on your device from a bundled word list. The IME (the
-          keyboard itself) does not make analytics or ad requests while you
-          type.
-        </p>
-
-        <h2>Data the free keyboard may collect (host app)</h2>
-        <p>
-          When you open the <strong>host app</strong> (Setup, Learn, Practice,
-          My Dictionary, Settings, Tutorial), the free keyboard may use the
-          network for:
-        </p>
-
-        <h3>Analytics (Firebase Analytics, Google)</h3>
-        <p>
-          We use Firebase Analytics to see whether people open the app, finish
-          setup, use the tutorial, and whether the keyboard was used that day.
-        </p>
-        <p>Typical data:</p>
-        <ul>
-          <li>App opens and which host screen you opened</li>
-          <li>Tutorial step, skip, and finish</li>
-          <li>Whether the keyboard is enabled and selected</li>
-          <li>Whether Pro is installed</li>
-          <li>
-            A once-per-day “keyboard used today” signal (timestamp and layout
-            name such as Latin-to-Khmer / Khmer / English — not the text you
-            typed)
-          </li>
-          <li>App instance identifiers used by Firebase</li>
-        </ul>
-
-        <h3>Advertising (Google AdMob)</h3>
-        <p>
-          The free host app may show ads on the splash and on My Dictionary
-          when it has at least one saved word. Ads are <strong>not</strong>
-          shown on Setup, Tutorial, Settings, or on the keyboard while you
-          type.
-        </p>
-        <p>
-          We use the Google Mobile Ads SDK (AdMob) as the mediator. The splash
-          banner is served by AdMob directly, without mediation. My Dictionary
-          native ads use AdMob mediation with Meta Audience Network as a
-          bidding ad source.
-        </p>
-        <p>
-          <strong>Mintegral</strong> may be added later after their account
-          review. This policy and the Play Data Safety form will list Mintegral
-          only when that network is actually in the app.
-        </p>
-        <p>Ad networks may receive:</p>
-        <ul>
-          <li>Your device’s Advertising ID</li>
-          <li>Device and app signals needed to request and measure ads</li>
-          <li>Ad impressions and approximate revenue events</li>
-        </ul>
-        <p>
-          They do <strong>not</strong> receive the text you type or My
-          Dictionary entries.
-        </p>
-        <p>
-          Unlocking Pro (the companion app or the in-app purchase) removes
-          these host-app ads. Pro users are not shown host ads.
-        </p>
-        <p>
-          In the European Economic Area and the United Kingdom we use Google’s
-          UMP consent form before personalized ads.
-        </p>
-
-        <h3>7-day Pro trial (host app)</h3>
-        <p>
-          When you start or continue the 7-day Pro trial, the host app may
-          contact
-          <code>https://khmerlish-keyboard-community.vercel.app/</code>
-          over HTTPS with:
-        </p>
-        <ul>
-          <li>
-            A Play Integrity token (so we can confirm the request comes from
-            this app on this device)
-          </li>
-          <li>
-            A hashed Android device id (SHA-256 of ANDROID_ID). This is a
-            <strong>device identifier</strong>, not an account. We do not
-            receive or store your Google account, email, or name for the trial.
-          </li>
-        </ul>
-        <p>
-          This check exists so uninstall on the same Android profile cannot
-          mint a new 7-day trial. Factory reset, another user profile, a
-          sideloaded build with Integrity bypass, and a new phone can still
-          start a new trial. We do <strong>not</strong> create a user account.
-          The IME does not send this request while you type.
-        </p>
-
-        <h3>Voice typing (optional)</h3>
-        <p>
-          The keyboard has an optional <strong>voice typing</strong> mic key
-          for dictating Khmer or English. Voice typing is entirely opt-in:
-          nothing records unless you tap the mic key. Voice typing works while
-          the 7-day Pro trial is active, with the optional voice subscription,
-          or — for everyone — up to <strong>10 free sessions per day</strong>.
-          The session counter is stored only on your device and resets daily;
-          it is never synced or reported to us.
-        </p>
-        <p>
-          When you tap the mic and speak, the recording is processed by your
-          device’s speech recognition service (provided by Google on most
-          devices). Only the final text is inserted into your text field. The
-          keyboard never receives, stores, or transmits your audio to us or to
-          any server we operate, and no audio or transcript history is kept.
-        </p>
-        <ul>
-          <li>
-            Password fields and number fields never show the mic. You can turn
-            voice typing off in the keyboard settings, and you can revoke
-            microphone access any time in Android Settings.
-          </li>
-        </ul>
-
-        <h3>Permissions</h3>
-        <p>
-          The free app may request network access, the Advertising ID, and —
-          for optional voice typing — <strong>microphone</strong> access. The
-          microphone is used only while a voice session is active. The app does
-          not request location for ads.
-        </p>
-
-        <h2>Personal Dictionary</h2>
-        <p>
-          If you use My Dictionary or teach the keyboard a spelling, the app
-          stores the Latin spelling and Khmer word <strong>locally on your
-          device</strong>. This data is used to improve suggestions on that
-          device.
-        </p>
-
-        <h3>Local only (default)</h3>
-        <p>
-          By default, personal dictionary data is not uploaded to the
-          developer. Android Auto Backup is limited to a small Pro-trial clock
-          file (trial timestamps and a hashed device id) so uninstalling does
-          not reset a used 7-day trial when the user has Google backup enabled.
-          My Dictionary, typing preferences, and other app data are excluded
-          from Android backup.
-        </p>
-
-        <h3>Optional Pro cloud backup (Google Drive)</h3>
-        <p>
-          Cloud backup runs in the <strong>Pro companion app</strong> when it
-          is installed. If you unlocked Pro inside the free app (or your 7-day
-          trial is active) and the companion is not installed, the free
-          keyboard performs the same backup itself: it connects to Google Drive
-          <strong>App Data</strong> on your behalf and stores the backup in
-          <strong>your</strong> Google account. Your dictionary is never sent
-          to our servers on either path. The app performing the backup may:
-        </p>
-        <ol>
-          <li>
-            Ask you to sign in with Google and grant access to the app’s
-            private <strong>Drive App Data</strong> folder (not your full Drive
-            files).
-          </li>
-          <li>
-            Upload and download a backup of My Dictionary entries to that
-            folder in <strong>your</strong> Google account.
-          </li>
-        </ol>
-        <p>
-          We do <strong>not</strong> host your My Dictionary on our own
-          servers. The backup lives in your Google account. You can disconnect
-          in the app, delete the cloud backup from the app, or revoke app
-          access in your Google Account settings. Local words on the device are
-          kept when you disconnect unless you delete them yourself.
-        </p>
-        <p>
-          Typing you do in other apps is not uploaded as part of cloud backup.
-        </p>
-
-        <h2>Accounts and purchases</h2>
-        <p>
-          The free keyboard does not create a developer username or password.
-          The 7-day Pro trial does not register an account.
-        </p>
-        <p>
-          Pro can be unlocked two ways: installing the separate paid companion
-          app (<code>com.chengsokdara.keyboard.pro</code>), or a one-time
-          purchase inside the free app. Unlimited voice typing is its own
-          subscription ($0.99 monthly or $5.99 yearly). All purchases and
-          subscriptions are processed by Google Play Billing; we never receive
-          your payment details, name, or email, and purchases do not create an
-          account with us. Subscriptions are managed and canceled in Google
-          Play.
-        </p>
-        <p>
-          Google Sign-In is optional and used only for Drive App Data cloud
-          backup in the Pro companion. Sign-in does not unlock Pro. ABA bank
-          tips never unlock features or cloud sync.
-        </p>
-
-        <h2>Secure fields</h2>
-        <p>
-          In password and other secure fields, the keyboard types direct ASCII,
-          hides Khmer suggestions, and does not learn entries.
-        </p>
-
-        <h2>Sharing</h2>
-        <p>We do not sell your data.</p>
-        <p>
-          We share the analytics and advertising data described above with:
-        </p>
-        <ul>
-          <li>Google (Firebase Analytics)</li>
-          <li>Google (AdMob / Google Mobile Ads SDK)</li>
-          <li>Meta Platforms (Audience Network)</li>
-        </ul>
-        <p>
-          Unity LevelPlay (ironSource Ads), Liftoff Monetize, and Unity Ads
-          served earlier releases through version 1.5.0 and no longer receive
-          data from new builds.
-        </p>
-        <p>
-          Those companies process the data under their own policies to provide
-          analytics or ads.
-        </p>
-        <p>
-          Voice recordings you choose to dictate are processed by your device’s
-          speech recognition service (Google) to return the transcript. This is
-          processing on your behalf, not ad sharing. We do not store your audio
-          or transcripts, and the audio never reaches our servers.
-        </p>
-        <p>
-          Pro Drive backup is stored in <strong>your</strong> Google account,
-          not shared with ad networks.
-        </p>
-
-        <h2>Retention and deletion</h2>
-        <ul>
-          <li>
-            Local dictionary and preferences stay on the device until you
-            delete them, clear app storage, or uninstall.
-          </li>
-          <li>
-            Cloud dictionary backup is deleted when you use Delete cloud backup
-            or remove app access in Google Account settings. See
-            <a href="../delete-data/">delete-data</a> and
-            <a href="../delete-account/">delete-account</a>.
-          </li>
-          <li>
-            Analytics events are not stored as a named account we can look up.
-            Uninstalling the app stops new events from this install. You can
-            reset or opt out of the Advertising ID in Android Settings.
-          </li>
-          <li>
-            Support email you send us is kept only as long as needed to answer
-            you.
-          </li>
-        </ul>
-
-        <h2>Children</h2>
-        <p>
-          The app is not directed to children under 13. It does not knowingly
-          collect personal data from children.
-        </p>
-
-        <h2>Changes</h2>
-        <p>
-          If we add a new ad network (including Mintegral), crash reporting, or
-          another network destination, this policy and the Google Play Data
-          Safety form will be updated before that release.
-        </p>
-
-        <h2>Contact</h2>
-        <p>
-          For privacy questions, contact: <code>chengsokdara@gmail.com</code>
-        </p>
-
-        <p class="note">
-          Suggestions run on-device. Host-app ads and analytics never include
-          what you type. Optional voice typing is processed by your device’s
-          speech service and is never stored. The 7-day trial uses a hashed
-          device id, not an account. Optional Pro cloud backup stores only your
-          My Dictionary in your Google Drive App Data when you turn it on.
-        </p>
+        <p><code>ក្តារចុចមោទនភាពខ្មែរ</code> (“Khmer Pride Keyboard”) is an Android keyboard that converts familiar Latin-letter typing into Khmer text on your device.</p>
+<p>The app is developed and published by Cheng Sokdara.</p>
+<p>This policy covers:</p>
+<ul>
+<li>The free keyboard app <code>com.chengsokdara.keyboard</code></li>
+<li>The optional paid companion <code>com.chengsokdara.keyboard.pro</code> (“Khmer Pride Keyboard Pro”)</li>
+</ul>
+<p>It applies to versions of the free keyboard that include host-app ads and Firebase Analytics (the Play release after <code>0.6.0</code> / version code 10). Builds <code>0.5.0</code> and <code>0.6.0</code> do not include those SDKs.</p>
+<h2>What we never collect</h2>
+<p>The keyboard does <strong>not</strong> send what you type, password fields, messages, suggestions you see, or My Dictionary words to us or to ad networks.</p>
+<p>Suggestions run on your device from a bundled word list. The IME (the keyboard itself) does not make analytics or ad requests while you type.</p>
+<h2>Data the free keyboard may collect (host app)</h2>
+<p>When you open the <strong>host app</strong> (Setup, Learn, Practice, My Dictionary, Settings, Tutorial), the free keyboard may use the network for:</p>
+<h3>Analytics (Firebase Analytics, Google)</h3>
+<p>We use Firebase Analytics to see whether people open the app, finish setup, use the tutorial, and whether the keyboard was used that day.</p>
+<p>Typical data:</p>
+<ul>
+<li>App opens and which host screen you opened</li>
+<li>Tutorial step, skip, and finish</li>
+<li>Whether the keyboard is enabled and selected</li>
+<li>Whether Pro is installed</li>
+<li>A once-per-day “keyboard used today” signal (timestamp and layout name such as Latin-to-Khmer / Khmer / English — not the text you typed)</li>
+<li>App instance identifiers used by Firebase</li>
+</ul>
+<h3>Advertising (Google AdMob)</h3>
+<p>The free host app may show ads on the splash and on My Dictionary when it has at least one saved word. Ads are <strong>not</strong> shown on Setup, Tutorial, Settings, or on the keyboard while you type.</p>
+<p>We use the Google Mobile Ads SDK (AdMob) as the mediator. The splash banner is served by AdMob directly, without mediation. My Dictionary native ads use AdMob mediation with Meta Audience Network as a bidding ad source.</p>
+<p><strong>Mintegral</strong> may be added later after their account review. This policy and the Play Data Safety form will list Mintegral only when that network is actually in the app.</p>
+<p>Ad networks may receive:</p>
+<ul>
+<li>Your device’s Advertising ID</li>
+<li>Device and app signals needed to request and measure ads</li>
+<li>Ad impressions and approximate revenue events</li>
+</ul>
+<p>They do <strong>not</strong> receive the text you type or My Dictionary entries.</p>
+<p>Unlocking Pro (the companion app or the in-app purchase) removes these host-app ads. Pro users are not shown host ads.</p>
+<p>In the European Economic Area and the United Kingdom we use Google’s UMP consent form before personalized ads.</p>
+<h3>7-day Pro trial (host app)</h3>
+<p>When you start or continue the 7-day Pro trial, the host app may contact <code>https://khmerlish-keyboard-community.vercel.app/</code> over HTTPS with:</p>
+<ul>
+<li>A Play Integrity token (so we can confirm the request comes from this app on this device)</li>
+<li>A hashed Android device id (SHA-256 of ANDROID_ID). This is a <strong>device identifier</strong>, not an account. We do not receive or store your Google account, email, or name for the trial.</li>
+</ul>
+<p>This check exists so uninstall on the same Android profile cannot mint a new 7-day trial. Factory reset, another user profile, a sideloaded build with Integrity bypass, and a new phone can still start a new trial. We do <strong>not</strong> create a user account. The IME does not send this request while you type.</p>
+<h3>Voice typing (optional)</h3>
+<p>The keyboard has an optional <strong>voice typing</strong> mic key for dictating Khmer or English. Voice typing is entirely opt-in: nothing records unless you tap the mic key. Voice typing works while the 7-day Pro trial is active, with the optional voice subscription, or — for everyone — up to <strong>10 free sessions per day</strong>. The session counter is stored only on your device and resets daily; it is never synced or reported to us.</p>
+<p>When you tap the mic and speak, the recording is processed by your device's speech recognition service (provided by Google on most devices). Only the final text is inserted into your text field. The keyboard never receives, stores, or transmits your audio to us or to any server we operate, and no audio or transcript history is kept.</p>
+<ul>
+<li>Password fields and number fields never show the mic. You can turn voice typing off in the keyboard settings, and you can revoke microphone access any time in Android Settings.</li>
+</ul>
+<h3>Permissions</h3>
+<p>The free app may request network access, the Advertising ID, and — for optional voice typing — <strong>microphone</strong> access. The microphone is used only while a voice session is active. The app does not request location for ads.</p>
+<h2>Personal Dictionary</h2>
+<p>If you use My Dictionary or teach the keyboard a spelling, the app stores the Latin spelling and Khmer word <strong>locally on your device</strong>. This data is used to improve suggestions on that device.</p>
+<h3>Local only (default)</h3>
+<p>By default, personal dictionary data is not uploaded to the developer. Android Auto Backup is limited to a small Pro-trial clock file (trial timestamps and a hashed device id) so uninstalling does not reset a used 7-day trial when the user has Google backup enabled. My Dictionary, typing preferences, and other app data are excluded from Android backup.</p>
+<h3>Optional Pro cloud backup (Google Drive)</h3>
+<p>Cloud backup runs in the <strong>Pro companion app</strong> when it is installed. If you unlocked Pro inside the free app (or your 7-day trial is active) and the companion is not installed, the free keyboard performs the same backup itself: it connects to Google Drive <strong>App Data</strong> on your behalf and stores the backup in <strong>your</strong> Google account. Your dictionary is never sent to our servers on either path. The app performing the backup may:</p>
+<ol>
+<li>Ask you to sign in with Google and grant access to the app’s private <strong>Drive App Data</strong> folder (not your full Drive files).</li>
+<li>Upload and download a backup of My Dictionary entries to that folder in <strong>your</strong> Google account.</li>
+</ol>
+<p>We do <strong>not</strong> host your My Dictionary on our own servers. The backup lives in your Google account. You can disconnect in the app, delete the cloud backup from the app, or revoke app access in your Google Account settings. Local words on the device are kept when you disconnect unless you delete them yourself.</p>
+<p>Typing you do in other apps is not uploaded as part of cloud backup.</p>
+<h2>Accounts and purchases</h2>
+<p>The free keyboard does not create a developer username or password. The 7-day Pro trial does not register an account.</p>
+<p>Pro can be unlocked two ways: installing the separate paid companion app (<code>com.chengsokdara.keyboard.pro</code>), or a one-time purchase inside the free app. Unlimited voice typing is its own subscription ($0.99 monthly or $5.99 yearly). All purchases and subscriptions are processed by Google Play Billing; we never receive your payment details, name, or email, and purchases do not create an account with us. Subscriptions are managed and canceled in Google Play.</p>
+<p>Google Sign-In is optional and used only for Drive App Data cloud backup in the Pro companion. Sign-in does not unlock Pro. ABA bank tips never unlock features or cloud sync.</p>
+<h2>Secure fields</h2>
+<p>In password and other secure fields, the keyboard types direct ASCII, hides Khmer suggestions, and does not learn entries.</p>
+<h2>Sharing</h2>
+<p>We do not sell your data.</p>
+<p>We share the analytics and advertising data described above with:</p>
+<ul>
+<li>Google (Firebase Analytics)</li>
+<li>Google (AdMob / Google Mobile Ads SDK)</li>
+<li>Meta Platforms (Audience Network)</li>
+</ul>
+<p>LevelPlay (ironSource), Liftoff Monetize, and Unity Ads served earlier releases through 1.5.0 and no longer receive data from new builds.</p>
+<p>Those companies process the data under their own policies to provide analytics or ads.</p>
+<p>Voice recordings you choose to dictate are processed by your device's speech recognition service (Google) to return the transcript. This is processing on your behalf, not ad sharing. We do not store your audio or transcripts, and the audio never reaches our servers.</p>
+<p>Pro Drive backup is stored in <strong>your</strong> Google account, not shared with ad networks.</p>
+<h2>Retention and deletion</h2>
+<ul>
+<li>Local dictionary and preferences stay on the device until you delete them, clear app storage, or uninstall.</li>
+<li>Cloud dictionary backup is deleted when you use Delete cloud backup or remove app access in Google Account settings. See <a href="../delete-data/">delete-data</a> and <a href="../delete-account/">delete-account</a>.</li>
+<li>Analytics events are not stored as a named account we can look up. Uninstalling the app stops new events from this install. You can reset or opt out of the Advertising ID in Android Settings.</li>
+<li>Support email you send us is kept only as long as needed to answer you.</li>
+</ul>
+<h2>Children</h2>
+<p>The app is not directed to children under 13. It does not knowingly collect personal data from children.</p>
+<h2>Changes</h2>
+<p>If we add a new ad network (including Mintegral), crash reporting, or another network destination, this policy and the Google Play Data Safety form will be updated before that release.</p>
+<h2>Contact</h2>
+<p>For privacy questions, contact: <code>chengsokdara@gmail.com</code></p>
+        <p class="note">Suggestions run on-device. Host-app ads and analytics never include what you type. Optional voice typing is processed by your device's speech service and is never stored. The 7-day trial uses a hashed device id, not an account. Optional Pro cloud backup stores only your My Dictionary in your Google Drive App Data when you turn it on.</p>
       </article>
     </main>
 
